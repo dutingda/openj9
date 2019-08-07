@@ -112,13 +112,6 @@ my %jcommander = (
 	fname => 'jcommander.jar',
 	sha1 => 'bfcb96281ea3b59d626704f74bc6d625ff51cbce'
 );
-my %asmtools = (
-	url => 'https://ci.adoptopenjdk.net/view/Dependencies/job/asmtools/lastSuccessfulBuild/artifact/asmtools.jar',
-	fname => 'asmtools.jar',
-	shaurl => 'https://ci.adoptopenjdk.net/view/Dependencies/job/asmtools/lastSuccessfulBuild/artifact/asmtools.jar.sha256sum.txt',
-	shafn => 'asmtools.jar.sha256sum.txt',
-	shaalg => '256'
-);
 # this is needed for JDK11 and up
 my %jaxb_api = (
 	url => 'http://central.maven.org/maven2/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar',
@@ -136,7 +129,7 @@ my @jars_info = (
 	\%junit4,
 	\%testng,
 	\%jcommander,
-	\%asmtools,
+#	\%asmtools,
 	\%jaxb_api
 );
 
